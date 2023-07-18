@@ -7,7 +7,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 const TopNav = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <LinkContainer to="/">
           <Navbar.Brand>SkateShop</Navbar.Brand>
