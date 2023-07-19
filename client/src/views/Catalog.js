@@ -5,11 +5,11 @@ import {
   Row,
   Card
 } from 'react-bootstrap'
-import useAxiosGet from '../hooks/useAxiosGet'
+import useAxios from '../hooks/useAxios'
 import shortid from 'shortid'
 
 const Catalog = () => {
-  const { data, error, loaded } = useAxiosGet('http://localhost:3001/products')
+  const { data, error, loaded } = useAxios('GET', 'http://localhost:3001/products')
   
   const results = useMemo(() => {
     return data || []
